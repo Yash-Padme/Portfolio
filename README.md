@@ -1,8 +1,8 @@
 # 🚀 Yash Padme - Portfolio Website
 
-A modern, responsive portfolio website showcasing professional projects, certifications, achievements, and skills in Full Stack Development and Data Science.
+A modern, responsive portfolio website showcasing professional projects, certifications, achievements, and skills in Full Stack Development and Data Analyst.
 
-**Live Demo:** [https://github.com/Yash-Padme/Portfolio](https://github.com/Yash-Padme/Portfolio)
+**Live Demo:** [https://yash-padme.github.io/Portfolio/](https://yash-padme.github.io/Portfolio/)
 
 ---
 
