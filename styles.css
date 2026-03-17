@@ -809,6 +809,44 @@ nav {
     gap: 15px;
 }
 
+/* Project Filter Buttons */
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    color: var(--light-text);
+    border: 2px solid var(--light-text);
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.project-card.hidden,
+.project-card.bg-cover.hidden {
+    display: none;
+}
+
 /* Contact Section */
 .contact {
     background-color: var(--bg-secondary);
