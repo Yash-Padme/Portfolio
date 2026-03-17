@@ -706,10 +706,47 @@ nav {
     background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-color));
 }
 
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--accent-color);
+    color: #121212;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 217, 255, 0.3);
+}
+
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: #121212;
+    box-shadow: 0 6px 18px rgba(0, 217, 255, 0.3);
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
+}
+
+.project-card.hidden {
+    display: none;
 }
 
 .project-card {

@@ -374,8 +374,14 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="analytics">Analytics</button>
+                <button class="filter-btn" data-filter="aiml">AI/ML</button>
+            </div>
             <div class="projects-grid">
-                <div class="project-card bg-cover" style="--card-bg: url('images/ForestFirePrediction.jpg');">
+                <div class="project-card bg-cover" data-category="aiml" style="--card-bg: url('images/ForestFirePrediction.jpg');">
                     <div class="project-info">
                         <h3>Forest Fire Prediction</h3>
                         <p>A data science and ML project analyzing the Algerian Forest Fire dataset with data cleaning,
@@ -396,7 +402,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/project2.jpg');">
+                <div class="project-card bg-cover" data-category="analytics" style="--card-bg: url('images/project2.jpg');">
                     <div class="project-info">
                         <h3>Chartify</h3>
                         <p>A Python project demonstrating data visualization techniques with Matplotlib and Seaborn,
@@ -415,7 +421,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/NUMPY3.png');">
+                <div class="project-card bg-cover" data-category="development" style="--card-bg: url('images/NUMPY3.png');">
                     <div class="project-info">
                         <h3>NumPy-Essentials</h3>
                         <p>A project showcasing NumPy essentials, covering array creation, indexing, slicing,
@@ -434,7 +440,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/Pandas.png');">
+                <div class="project-card bg-cover" data-category="analytics" style="--card-bg: url('images/Pandas.png');">
                     <div class="project-info">
                         <h3>Pandas-Essentials</h3>
                         <p>A hands-on project exploring Pandas fundamentals through Jupyter Notebooks, covering data
@@ -453,7 +459,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/KrushiRaah.png');">
+                <div class="project-card bg-cover" data-category="aiml" style="--card-bg: url('images/KrushiRaah.png');">
                     <div class="project-info">
                         <h3>KrushiRaah</h3>
                         <p>AI-Powered Agriculture web app for SIH(2025) that assists farmers with crop recommendations,
@@ -476,7 +482,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/social.jpg');">
+                <div class="project-card bg-cover" data-category="aiml" style="--card-bg: url('images/social.jpg');">
                     <div class="project-info">
                         <h3>SmartSocialRecommender</h3>
                         <p>A Python-based recommendation system that processes and cleans social network data, analyzes
