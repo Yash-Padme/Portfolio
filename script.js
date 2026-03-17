@@ -125,6 +125,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+
+    
+
     // Hamburger toggle for mobile (re-added)
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.getElementById('primary-navigation');
@@ -198,4 +201,39 @@ function createSimplifiedParticles() {
         
         particlesContainer.appendChild(particle);
     }
-} 
+
+
+    
+    
+}
+
+// Typing effect
+const typedText = document.getElementById('typed-text');
+const words = ['Data Analyst', 'Business Analyst ', 'Problem Solver'];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+    const currentWord = words[wordIndex];
+    
+    if (isDeleting) {
+        typedText.textContent = currentWord.substring(0, charIndex--);
+    } else {
+        typedText.textContent = currentWord.substring(0, charIndex++);
+    }
+    
+    if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(type, 2000);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(type, 500);
+    } else {
+        setTimeout(type, isDeleting ? 50 : 100);
+    }
+}
+
+setTimeout(type, 1000);
+
