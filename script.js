@@ -65,6 +65,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Project category filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const filterValue = this.getAttribute('data-filter');
+
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            projectCards.forEach(card => {
+                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
     // Simple social media icons interaction
     const socialLinks = document.querySelectorAll('.social-links a, .contact-social-links a');
     

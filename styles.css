@@ -809,6 +809,55 @@ nav {
     gap: 15px;
 }
 
+/* Project Category Badge */
+.project-category {
+    display: inline-block;
+    background-color: rgba(0, 30, 40, 0.8);
+    color: var(--accent-color);
+    padding: 4px 12px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    border: 1px solid rgba(0, 217, 255, 0.4);
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+/* Filter Buttons */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: #121212;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.3);
+}
+
+/* Hidden project cards when filtered */
+.project-card.hidden {
+    display: none;
+}
+
 /* Contact Section */
 .contact {
     background-color: var(--bg-secondary);
