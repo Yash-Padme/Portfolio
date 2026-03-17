@@ -38,7 +38,8 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Hello! I’m <span class="highlight">Yash Padme</span></h1>
-<h2>Full Stack Developer & <span id="typed-text"></span><span class="cursor">|</span></h2>                    <p>I specialize in converting complex datasets into actionable insights through Python, SQL, Machine
+                    <h2>Full Stack Developer & <span id="typed-text"></span><span class="cursor">|</span></h2>
+                    <p>I specialize in converting complex datasets into actionable insights through Python, SQL, Machine
                         Learning, and executive-level data visualizations.</p>
                     <div class="social-links">
                         <a href="https://github.com/Yash-Padme" target="_blank" aria-label="GitHub"><i
@@ -221,7 +222,7 @@
                     </ul>
                 </div>
 
-                
+
 
             </div>
         </div>
@@ -371,12 +372,27 @@
 
     <!-- projects -->
 
+    <!-- projects -->
+
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="analytics">Analytics</button>
+                <button class="filter-btn" data-filter="aiml">AI/ML</button>
+                <button class="filter-btn" data-filter="casestudy">Case Studies</button>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card bg-cover" style="--card-bg: url('images/ForestFirePrediction.jpg');">
+                <!-- Forest Fire Prediction - AI/ML -->
+                <div class="project-card bg-cover" data-category="aiml"
+                    style="--card-bg: url('images/ForestFirePrediction.jpg');">
                     <div class="project-info">
+                        <span class="project-category">AI/ML Project</span>
                         <h3>Forest Fire Prediction</h3>
                         <p>A data science and ML project analyzing the Algerian Forest Fire dataset with data cleaning,
                             visualization, and multiple regression models (Linear, Lasso, Ridge, Elastic Net) to predict
@@ -396,8 +412,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/project2.jpg');">
+
+                <!-- Chartify - Analytics -->
+                <div class="project-card bg-cover" data-category="analytics"
+                    style="--card-bg: url('images/project2.jpg');">
                     <div class="project-info">
+                        <span class="project-category">Analytics Project</span>
                         <h3>Chartify</h3>
                         <p>A Python project demonstrating data visualization techniques with Matplotlib and Seaborn,
                             including bar charts, histograms, scatter plots, subplots, and styled visualizations.</p>
@@ -415,8 +435,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/NUMPY3.png');">
+
+                <!-- NumPy-Essentials - Development -->
+                <div class="project-card bg-cover" data-category="development"
+                    style="--card-bg: url('images/NUMPY3.png');">
                     <div class="project-info">
+                        <span class="project-category">Development Project</span>
                         <h3>NumPy-Essentials</h3>
                         <p>A project showcasing NumPy essentials, covering array creation, indexing, slicing,
                             broadcasting, mathematical operations, data types, and performance comparisons with pure
@@ -434,8 +458,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/Pandas.png');">
+
+                <!-- Pandas-Essentials - Analytics -->
+                <div class="project-card bg-cover" data-category="analytics"
+                    style="--card-bg: url('images/Pandas.png');">
                     <div class="project-info">
+                        <span class="project-category">Analytics Project</span>
                         <h3>Pandas-Essentials</h3>
                         <p>A hands-on project exploring Pandas fundamentals through Jupyter Notebooks, covering data
                             structures, selection, cleaning, transformation, aggregation, merging, and reshaping using
@@ -453,8 +481,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/KrushiRaah.png');">
+
+                <!-- KrushiRaah - AI/ML -->
+                <div class="project-card bg-cover" data-category="aiml"
+                    style="--card-bg: url('images/KrushiRaah.png');">
                     <div class="project-info">
+                        <span class="project-category">AI/ML Project</span>
                         <h3>KrushiRaah</h3>
                         <p>AI-Powered Agriculture web app for SIH(2025) that assists farmers with crop recommendations,
                             disease detection, weather forecasting, and market insights to make farming more sustainable
@@ -467,7 +499,6 @@
                             <span>Python</span>
                             <span>Machine Learning</span>
                             <span>APIs</span>
-
                         </div>
                         <div class="project-links">
                             <a href="images/krushiraahdemo.jpg" target="_blank" class="btn btn-sm">View Demo</a>
@@ -476,8 +507,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card bg-cover" style="--card-bg: url('images/social.jpg');">
+
+                <!-- SmartSocialRecommender - AI/ML -->
+                <div class="project-card bg-cover" data-category="aiml" style="--card-bg: url('images/social.jpg');">
                     <div class="project-info">
+                        <span class="project-category">AI/ML Project</span>
                         <h3>SmartSocialRecommender</h3>
                         <p>A Python-based recommendation system that processes and cleans social network data, analyzes
                             user relationships, and generates intelligent friend and page suggestions based on mutual
@@ -495,6 +529,94 @@
                         </div>
                     </div>
                 </div>
+
+
+                <!-- E-Tailing Customer Segmentation - Analytics -->
+                <div class="project-card bg-cover" data-category="analytics"
+                    style="--card-bg: url('images/etailing.jpg');">
+                    <div class="project-info">
+                        <span class="project-category">Analytics Project</span>
+                        <h3>E-Tailing Customer Segmentation</h3>
+                        <p>A customer segmentation project using machine learning and statistical analysis to identify
+                            distinct customer groups in e-commerce data, enabling targeted marketing strategies and
+                            personalized customer experiences.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                            <span>Data Analysis</span>
+                            <span>Clustering</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Yash-Padme/E-Tailing-Customer-Segmentation" target="_blank"
+                                class="btn btn-sm">View Project</a>
+                            <a href="https://github.com/Yash-Padme/E-Tailing-Customer-Segmentation" target="_blank"
+                                class="btn btn-sm btn-outline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CRS Credit Risk Scorecard Project - Analytics -->
+                <div class="project-card bg-cover" data-category="analytics"
+                    style="--card-bg: url('images/creditrisk.jpg');">
+                    <div class="project-info">
+                        <span class="project-category">Analytics Project</span>
+                        <h3>CRS Credit Risk Scorecard</h3>
+                        <p>A comprehensive credit risk scorecard project that builds predictive models to assess credit
+                            risk, using feature engineering, model development, and validation techniques for financial
+                            institutions to make informed lending decisions.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                            <span>Statistical Modeling</span>
+                            <span>Credit Analysis</span>
+                            <span>Risk Assessment</span>
+                            <span>Data Preprocessing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://crs-credit-risk-scorecard-project-yashpadme.streamlit.app/" target="_blank"
+                                class="btn btn-sm">View Project</a>
+                            <a href="https://github.com/Yash-Padme/CRS_Credit-Risk-Scorecard-Project" target="_blank"
+                                class="btn btn-sm btn-outline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Vendor Performance and Profitability Analysis - Analytics -->
+                <div class="project-card bg-cover" data-category="analytics"
+                    style="--card-bg: url('images/vendor-analysis.jpg');">
+                    <div class="project-info">
+                        <span class="project-category">Analytics Project</span>
+                        <h3>Vendor Performance & Profitability Analysis</h3>
+                        <p>A comprehensive vendor analysis project that evaluates vendor performance metrics,
+                            profitability trends, and operational efficiency using advanced data analysis techniques.
+                            Includes KPI tracking, comparative analysis, and actionable business insights for vendor
+                            management.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Data Analysis</span>
+                            <span>Business Intelligence</span>
+                            <span>Performance Metrics</span>
+                            <span>Data Visualization</span>
+                            <span>Financial Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Yash-Padme/Vendor-Performance-and-Profitability-Analysis"
+                                target="_blank" class="btn btn-sm">View Project</a>
+                            <a href="https://github.com/Yash-Padme/Vendor-Performance-and-Profitability-Analysis"
+                                target="_blank" class="btn btn-sm btn-outline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
 
 
             </div>
