@@ -65,6 +65,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Category filter buttons
+    const filterButtons = document.querySelectorAll('.filter-btn');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const filter = this.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
     // Simple social media icons interaction
     const socialLinks = document.querySelectorAll('.social-links a, .contact-social-links a');
     
