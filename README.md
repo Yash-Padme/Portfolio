@@ -1,6 +1,6 @@
 # 🚀 Yash Padme - Portfolio Website
 
-A modern, responsive portfolio website showcasing professional projects, certifications, achievements, and skills in Full Stack Development and Data Analyst.
+A modern, responsive portfolio website showcasing professional experience, projects, certifications, achievements, and skills in Full Stack Development and Data Analytics.
 
 **Live Demo:** [https://yash-padme.github.io/Portfolio/](https://yash-padme.github.io/Portfolio/)
 
@@ -29,9 +29,10 @@ A modern, responsive portfolio website showcasing professional projects, certifi
 - ✅ **Lazy Loading** - Optimized performance with intersection observer
 - ✅ **Accessibility** - ARIA labels and semantic HTML for better accessibility
 - ✅ **Social Media Integration** - Links to GitHub, LinkedIn, Instagram, LeetCode, and Email
-- ✅ **Project Showcase** - Display of 6+ data science and machine learning projects
-- ✅ **Certifications Display** - 9+ professional certifications with verification links
-- ✅ **Achievements Section** - Highlights of courses, hackathons, and competitions
+- ✅ **Project Showcase** - Display of 9 projects across AI/ML, Analytics, and Development categories with filter buttons
+- ✅ **Certifications Display** - Professional certifications with verification links
+- ✅ **Experience Section** - Highlights of professional and leadership experience
+- ✅ **Achievements Section** - Hackathons, competitions, and recognitions
 
 ---
 
@@ -50,7 +51,7 @@ A modern, responsive portfolio website showcasing professional projects, certifi
 ### 1. **Header Navigation**
 
 - Logo and branding
-- Responsive navigation menu
+- Responsive navigation menu with links to Home, About, Experiences, Achievements, Projects, Certificates, and Contact
 - Mobile hamburger menu with toggle functionality
 
 ### 2. **Hero Section**
@@ -58,7 +59,7 @@ A modern, responsive portfolio website showcasing professional projects, certifi
 - Personalized greeting with animated title
 - Professional summary
 - Call-to-action buttons (View & Download Resume)
-- Social media links
+- Social media links (GitHub, LeetCode, LinkedIn, Instagram, Email)
 - Profile image
 - Animated particle background
 
@@ -66,49 +67,56 @@ A modern, responsive portfolio website showcasing professional projects, certifi
 
 - Personal bio and professional goals
 - **Skills Showcase:**
-  - Languages (Python, MySQL, C, C++, HTML, CSS, JavaScript)
-  - Python Libraries (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, PyTorch, Flask)
-  - Tools (Jupyter, VS Code, Git, GitHub, Tableau, Power BI, Excel)
-  - Mathematics (Probability, Statistics, Regression, Linear Algebra)
-  - Web Technologies
-  - Analytics
+  - Programming & Query Languages (Python, C++, SQL, HTML, JavaScript)
+  - Machine Learning & Data Science (Pandas, NumPy, Scikit-learn, Seaborn, TensorFlow, PyTorch, Statistics, Regression, Forecasting, A/B Testing)
+  - Web Technologies (React.js, Next.js, Node.js, Express.js, Tailwind CSS)
+  - Databases & Backend (MySQL, PostgreSQL, MongoDB, Firebase, REST APIs, Database Normalization)
+  - Cloud, Platforms & Concepts (AWS (EC2, S3), Google Cloud Platform, Docker, Git, ETL, Data Warehousing, Feature Engineering, Agile Methodology)
 
-### 4. **Achievements Section**
+### 4. **Experience Section**
 
-- GenAI – Value Added Course (Parul University)
-- DevOps Meets AI (AWS Cloud Club)
-- Vadodara Hackathon 6.0 (PIERC)
-- NationBuilding Case Study Competition 2026
+- **Technical Team Member** – Uthaan Club, ABV-IIITM Gwalior (2024)
+  - Managed and maintained automation tools and event management platforms
+  - Optimized internal workflows, achieving a 30% improvement in operational efficiency
+- **Team Lead – Case Study Competition** – Infotsav 2024
+  - Led a team of 6 members for a large-scale case study competition
+  - Handled logistics and coordination for 500+ participants
 
-### 5. **Projects Section**
+### 5. **Achievements Section**
 
-- **Forest Fire Prediction** - ML regression project with multiple models
-- **Chartify** - Data visualization techniques showcase
-- **NumPy-Essentials** - NumPy fundamentals and performance comparisons
-- **Pandas-Essentials** - Pandas data manipulation and analysis
-- **KrushiRaah** - AI-powered agriculture web app
-- **SmartSocialRecommender** - Python recommendation system
+- **Adobe India Hackathon – Round 1** (2025) – Certificate of Participation (Online MCQ Assessment + Coding)
+- **TVS Credit EPIC 7.0 – Strategy Challenge** (September 2025) – Certificate of Participation
+- **CodeClash: The August Arena** (August 2025) – Certificate of Excellence, Ranked 528th in Foundations Round
 
-### 6. **Certificates Section**
+### 6. **Projects Section**
 
-- Data Science & Analytics (HP-Life)
-- Data Visualization (TATA Forage)
-- Data Analytics Job Simulation (Deloitte Forage)
-- Data Warehousing (GeeksforGeeks)
-- GenAI Powered Data Analytics (TATA Forage)
-- Quantitative Research (J.P. Morgan Forage)
-- Natural Language Processing (SimpliLearn)
-- Critical Thinking in AI Era (HP-Life)
-- Soft Skills (TCS iON)
+Projects are filterable by category: All Projects, Development, Analytics, AI/ML, Case Studies.
 
-### 7. **Contact Section**
+- **Forest Fire Prediction** (AI/ML) – ML regression project using Algerian Forest Fire dataset with Linear, Lasso, Ridge, and Elastic Net models
+- **Chartify** (Analytics) – Data visualization techniques with Matplotlib and Seaborn
+- **NumPy-Essentials** (Development) – NumPy fundamentals, array operations, and performance comparisons
+- **Pandas-Essentials** (Analytics) – Pandas data manipulation and analysis via Jupyter Notebooks
+- **KrushiRaah** (AI/ML) – AI-powered agriculture web app for SIH 2025 with crop recommendations and disease detection
+- **SmartSocialRecommender** (AI/ML) – Python-based social network recommendation system
+- **E-Tailing Customer Segmentation** (Analytics) – ML-based customer segmentation for e-commerce data
+- **CRS Credit Risk Scorecard** (Analytics) – Predictive credit risk models with feature engineering and validation ([Live App](https://crs-credit-risk-scorecard-project-yashpadme.streamlit.app/))
+- **Vendor Performance & Profitability Analysis** (Analytics) – Vendor KPI tracking, comparative analysis, and business insights
+
+### 7. **Certificates Section**
+
+- **Software Engineering Job Simulation** – Forage (Issued: October 2025)
+- **Data Visualisation: Empowering Business with Effective Insights** – Forage (Issued: March 2025)
+- **0–1 MERN Full Stack Web Development** – 100xDevs (Completed: June 2024)
+- **Alpha: DSA with C++** – Apna College (Issued: 2024)
+
+### 8. **Contact Section**
 
 - Contact information and location
-- Functional contact form
+- Functional contact form (Formspree)
 - Social media links
-- Call-to-action for opportunities
+- Call-to-action for internships, full-time roles, freelance projects, and collaborations
 
-### 8. **Footer**
+### 9. **Footer**
 
 - Copyright information
 
@@ -151,21 +159,26 @@ A modern, responsive portfolio website showcasing professional projects, certifi
    - Update social media links
    - Replace profile image in `images/` folder
 
-2. **Modify Projects**
+2. **Modify Experience**
+   - Edit experience cards in the Experience section
+   - Update roles, companies, dates, and bullet points
+
+3. **Modify Projects**
    - Edit project cards in the Projects section
    - Update demo links and GitHub repositories
+   - Update the `data-category` attribute to control filter visibility
    - Add/remove project cards as needed
 
-3. **Update Certifications**
+4. **Update Certifications**
    - Add new certification cards in the Certificates section
    - Update credential links and dates
    - Replace certificate images in `images/` folder
 
-4. **Customize Styling**
+5. **Customize Styling**
    - Edit colors, fonts, and layouts in `styles.css`
    - Modify CSS custom properties (variables) at the root
 
-5. **Add New Features**
+6. **Add New Features**
    - Extend JavaScript in `script.js`
    - Add new sections with corresponding HTML markup
    - Update navigation links
@@ -179,20 +192,26 @@ Portfolio/
 ├── index.html              # Main HTML file
 ├── styles.css              # CSS styling
 ├── script.js               # JavaScript functionality
-├── README.md              # Project documentation
-├── LICENSE                # MIT License
-├── .gitignore             # Git ignore rules
-└── images/                # Image assets
-    ├── see.jpg            # Profile picture
-    ├── Portfolio.pdf      # Resume PDF
+├── README.md               # Project documentation
+├── .gitignore              # Git ignore rules
+└── images/                 # Image assets
+    ├── yash.jpg            # Profile picture
+    ├── resume.pdf          # Resume PDF
     ├── ForestFirePrediction.jpg
     ├── NUMPY3.png
     ├── Pandas.png
     ├── KrushiRaah.png
-    ├── certificate*.jpg   # Certificates
-    ├── GenAILogo.png
-    ├── devopslogo.png
-    └── ... (other project images)
+    ├── social.jpg
+    ├── project2.jpg
+    ├── Forage_Software_Engineering.jpg
+    ├── Forage_Data_Visualisation.jpg
+    ├── 100xDevs_MERN_Certificate.png
+    ├── ApnaCollege_Alpha_DSA.jpg
+    ├── AdobeHackathon.png
+    ├── TVSCreditEPIC7.png
+    ├── CodeClash_Certificate.pdf
+    ├── r1.png, g1.png, b1.png, y1.png  # Skill card backgrounds
+    └── ... (other project and certificate images)
 ```
 
 ---
@@ -203,6 +222,7 @@ Portfolio/
 - **Header Scroll Effect:** Dynamic header styling on scroll
 - **Intersection Observer:** Section animations on scroll
 - **Mobile Menu Toggle:** Responsive navigation with click handlers
+- **Project Filtering:** Filter buttons to display projects by category (All, Development, Analytics, AI/ML, Case Studies)
 - **Social Links Animation:** Hover effects on social media icons
 - **Form Submission:** Formspree integration for contact form
 - **Particle Animation:** Animated background particles in hero section
@@ -264,8 +284,6 @@ copies or substantial portions of the Software.
 - [ ] Dark/Light theme toggle
 - [ ] Blog section for articles
 - [ ] GitHub API integration for live projects
-- [ ] Email notification system
-- [ ] Performance optimization with lazy loading
 - [ ] SEO meta tags enhancement
 - [ ] Analytics integration
 
@@ -286,6 +304,6 @@ If you found this portfolio helpful or inspiring, please consider giving it a st
 
 ---
 
-**Last Updated:** January 2026
+**Last Updated:** March 2026
 
 **Status:** Active & Maintained ✅
