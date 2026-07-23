@@ -101,32 +101,36 @@ document.addEventListener("DOMContentLoaded", function () {
       submitButton.innerHTML = "Sending...";
       submitButton.disabled = true;
 
+      // yashpadme13@gmail.com pw Yash@1234
+
       fetch("https://formspree.io/f/xzddzevk", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: json,
-      })
-        .then(async (response) => {
-          let json = await response.json();
-          if (response.status == 200) {
-            alert(json.message); // "Form submitted successfully"
-            contactForm.reset();
-          } else {
-            console.log(response);
-            alert(json.message);
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-          alert("Something went wrong!");
-        })
-        .finally(() => {
-          submitButton.innerHTML = originalButtonText;
-          submitButton.disabled = false;
-        });
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    },
+    body: json
+})
+.then(async (response) => {
+    const result = await response.json();
+
+    if (response.ok) {
+        alert("✅ Message sent successfully!");
+        contactForm.reset();
+    } else {
+        console.error(result);
+        alert(result.errors?.[0]?.message || "❌ Failed to send message.");
+    }
+})
+.catch((error) => {
+    console.error(error);
+    alert("❌ Something went wrong!");
+})
+.finally(() => {
+    submitButton.innerHTML = originalButtonText;
+    submitButton.disabled = false;
+});
+
     });
   }
 
@@ -208,7 +212,7 @@ function createSimplifiedParticles() {
 
 // Typing effect
 const typedText = document.getElementById("typed-text");
-const words = ["Data Analyst", "Business Analyst ", "Problem Solver"];
+const words = ["Data Analyst ", "Business Analyst ", "Problem Solver "];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
