@@ -1,3 +1,7 @@
+//
+
+
+
 // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Smooth scrolling for navigation links
@@ -86,6 +90,66 @@ document.addEventListener("DOMContentLoaded", function () {
   // Create fewer particles for background
   createSimplifiedParticles();
 
+
+
+  // =====================
+// DYNAMIC RESUME DOWNLOAD
+// =====================
+
+// Helper function to generate the dynamic date string (e.g., "9thAug")
+function getFormattedDate() {
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.toLocaleString('default', { month: 'short' }); // Gets "Aug", "Sep", etc.
+
+    // Determine the correct ordinal suffix (st, nd, rd, th)
+    let suffix = "th";
+    if (day % 10 === 1 && day !== 11) suffix = "st";
+    else if (day % 10 === 2 && day !== 12) suffix = "nd";
+    else if (day % 10 === 3 && day !== 13) suffix = "rd";
+
+    return `${day}${suffix}${month}`;
+}
+
+// Function to fetch the local PDF, rename it dynamically, and trigger download
+function downloadDynamicResume() {
+    // Path to your resume in the repository
+    const pdfUrl = 'images/Portfolio.pdf'; 
+    const dateString = getFormattedDate();
+    
+    // Creates the format: YashPadme_resume_9thAug.pdf
+    const fileName = `YashPadme_resume_${dateString}.pdf`; 
+
+    // Fetch the file as a Blob to bypass naming restrictions
+    fetch(pdfUrl)
+        .then(response => response.blob())
+        .then(blob => {
+            // Create a temporary object URL for the blob
+            const url = window.URL.createObjectURL(blob);
+            
+            // Create a hidden link, attach the blob, and click it programmatically
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = fileName;
+            
+            document.body.appendChild(a);
+            a.click();
+            
+            // Clean up the DOM and memory
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        })
+        .catch(error => {
+            console.error('Error downloading the resume:', error);
+            // Fallback: Just open the file in a new tab if the fetch fails
+            window.open(pdfUrl, '_blank'); 
+        });
+}
+
+
+//from logic of downloadend
+
   // Contact form submission with Web3Forms
   const contactForm = document.querySelector(".contact-form");
   if (contactForm) {
@@ -115,13 +179,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const result = await response.json();
 
     if (response.ok) {
-        alert("✅ Message sent successfully!");
+        // Updated alert to let them know the download is starting
+        alert("✅ Message sent successfully! Your resume download will start shortly.");
         contactForm.reset();
+        
+        // 🔥 Trigger the dynamic download right here
+        downloadDynamicResume();
     } else {
         console.error(result);
         alert(result.errors?.[0]?.message || "❌ Failed to send message.");
     }
 })
+
 .catch((error) => {
     console.error(error);
     alert("❌ Something went wrong!");
@@ -133,6 +202,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
   }
+
+
+
 
   // Hamburger toggle for mobile (re-added)
   const menuToggle = document.querySelector(".menu-toggle");
