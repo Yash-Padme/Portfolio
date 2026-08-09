@@ -1,4 +1,33 @@
 //
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Initializing experience toggle...");
+  
+  const experienceHeaders = document.querySelectorAll(".experience-header");
+
+  experienceHeaders.forEach(header => {
+    header.addEventListener("click", function () {
+      
+      // Toggle the 'active' class to rotate the chevron arrow
+      this.classList.toggle("active");
+      
+      // Select the sibling element (the <ul> containing the bullet points)
+      const details = this.nextElementSibling;
+      
+      // Calculate and toggle the max-height for a smooth slide-down effect
+      if (details.style.maxHeight) {
+        // Close the accordion
+        details.style.maxHeight = null;
+        details.style.opacity = "0";
+        details.style.marginTop = "0";
+      } else {
+        // Open the accordion (scrollHeight gets the exact height of the content)
+        details.style.maxHeight = details.scrollHeight + "px";
+        details.style.opacity = "1";
+        details.style.marginTop = "15px"; // Adds a little breathing room
+      }
+    });
+  });
+});
 
 
 

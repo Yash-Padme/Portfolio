@@ -2266,3 +2266,44 @@ li {
     gap: 15px;
   }
 }
+
+
+
+/* demo */
+/* Make the header clickable and position the icon */
+.experience-header {
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px; /* Space for the toggle icon */
+}
+
+/* Add a Font Awesome chevron icon to the right side */
+.experience-header::after {
+    content: '\f078'; /* Font Awesome chevron-down */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    color: #555; /* Adjust to match your theme */
+}
+
+/* Rotate the icon when active */
+.experience-header.active::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Hide the details by default and set up smooth transition */
+.experience-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out, margin 0.4s ease-out;
+}
+
+/* We will handle the open state dynamically via JavaScript for the perfect height */
